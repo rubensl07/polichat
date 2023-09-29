@@ -1,0 +1,107 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+.containerGeral{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+}
+.card{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 99, 71, 0.411);
+    background: linear-gradient(to left, rgba(255, 160, 143, 0.411), rgba(150, 23, 0, 0.411));
+    border-radius: 10px;
+    border-color: black;
+    border: 2px #000000 solid; 
+    justify-content: space-between;
+    position: relative;
+}
+.top{
+    height: 10%;
+    font-size: 8px;
+    display: flex;
+    justify-content: end;
+    margin-top: 4px;
+    margin-right: 64px;
+}
+.container{
+    margin: 0px 16px 16px 16px;
+    display: flex;
+    flex-direction: row;
+}
+.pfp{
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    background-image: var(--url-image);
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+.nome{
+    font-size: large;
+}
+.descricao{
+    margin-top: 10px;
+    font-size: 8px;
+}
+.nomeNot{
+    display: flex;
+}
+.not{
+    margin-left: 10px;
+    background-color: tomato;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: small;
+    color: #fff;
+}
+.atendente{
+    background-color: red;
+    height: 32px;
+    width: 104px;
+    position: absolute;
+    top: 72px;
+    left: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.atendenteImg{
+    background-image: url(./img/atendente.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 40%;
+}
+.atendenteNome{
+    font-size: 40%;
+    color: white;
+    margin-right: 8px;
+    text-transform: uppercase;
+}
